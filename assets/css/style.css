@@ -1,0 +1,151 @@
+body {
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 1.3;
+    color: #22356F;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 27px 0 75px;
+    position: relative;
+}
+
+.header-bg {
+    width: 100px;
+    height: 100%;
+    background: #F4F9E2;
+    position: absolute;
+}
+
+.header__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #62D0DF;
+}
+
+.header__nav_list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__nav_item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.header__nav_link {
+    color: #22356F;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+}
+
+.header__nav_link.active::after {
+    content: "";
+    display: block;
+    margin-top: 8px;
+    width: 120%;
+    height: 1px;
+    background: #22356F;
+    position: absolute;
+    left: -10%;
+}
+
+.header__nav_link::after {
+    content: "";
+    display: block;
+    margin-top: 8px;
+    width: 0;
+    height: 1px;
+    background: #22356F;
+    position: absolute;
+    left: -10%;
+    transition: all 0.3s ease;
+}
+
+.header__nav_link:hover::after {
+    width: 120%;
+}
+
+.header__btn {
+    color: #fff;
+    padding: 17px 34px;
+    background: #62D0DF;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.intro {
+    margin-top: 164px;
+}
+
+.intro__content {
+    max-width: 45%;
+}
+
+.section-intro__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #22356F;
+    margin: 40px 0 70px;
+    text-transform: uppercase;
+}
+
+.section-intro__text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.btn-group {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.intro__who-btn {
+    padding: 10px 30px;
+    margin-right: 38px;
+    color: #fff;
+    background: #F9B640;
+}
+
+.intro__what-btn {
+    color: #FAB63E;
+}
